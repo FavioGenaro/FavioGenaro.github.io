@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    height: 100%;
+    position: relative;
+}
+
 .button{
     z-index: 2;
 }
-
+/* HEADER */
 .header{
     @apply p-0 w-full sm:w-auto rounded-lg ;
     /* width: 100%; */
@@ -45,9 +50,22 @@
     animation-range: 0 100px;
 }
 
+/* PROFILE */
+.profile-layout{
+    padding-top: 4rem;
+}
+@media (min-width: 640px ) { /* de 600 en adelante toma en cuenta este codigo*/
+    .profile-layout{
+        padding-top: 9rem;
+        padding-bottom: 3rem
+    }
+}
+
+
 @keyframes nav-shadown {
     to {
         @apply shadow-lg ring-1 backdrop-blur ring-gray-500/20;
+        border: 1px solid rgb(158, 158, 158);
         /* dark:bg-gray-800/60 */
         /* bg-white/60 */
     }
