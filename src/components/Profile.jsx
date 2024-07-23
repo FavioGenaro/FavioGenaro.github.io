@@ -1,12 +1,12 @@
 import foto from "../assets/cv-foto.webp"
-import github from './../assets/github.svg';
-import linkedin from './../assets/linkedin.svg';
-import mail from './../assets/mail.svg';
+import GithubIcon from "../assets/icons/GithubIcon";
+import LinkedinIcon from "../assets/icons/LinkedinIcon";
+import MailIcon from "../assets/icons/MailIcon";
 
 const Profile = () => {
 
     return (
-        <section className="m-auto w-autow-full mx-auto container profile-layout w-full lg:max-w-3xl md:max-w-2xl">
+        <section id="Profile" className="m-auto w-autow-full mx-auto container profile-layout w-full lg:max-w-3xl md:max-w-2xl">
             <div className="image-state flex items-center justify-center sm:justify-normal flex-col sm:flex-row gap-4">
                 <div className="image">
                     <img src={foto} alt="foto de perfil" className="rounded-full shadow-lg size-32" />
@@ -24,15 +24,16 @@ const Profile = () => {
             </p>
             <div className="contact py-4 sm:flex sm:justify-between dark:text-white my-auto">
                 <div className="flex items-center gap-2">
-                    <img src={linkedin} alt="linkedin-icon" className='w-8 dark:fill-slate-200'/>
+                    {/* <img src={linkedin} alt="linkedin-icon" className='w-8 dark:fill-slate-200'/> */}
+                    <LinkedinIcon/>
                     <p>LinkedIn</p>
                 </div>
                 <div className="flex items-center gap-2">
-                    <img src={github} alt="github-icon" className='w-8'/>
+                    <GithubIcon haveModeDark={true}/>
                     <p>GitHub</p>
                 </div>
                 <div className="flex items-center gap-2">
-                    <img src={mail} alt="mail-icon" className='w-8'/>
+                    <MailIcon/>
                     <p>faviogenarosaico@gmail.com</p>
                 </div>
             </div>

@@ -1,4 +1,5 @@
-import github from './../assets/github.svg'
+import GithubIcon from '../assets/icons/GithubIcon'
+import PreviewIcon from '../assets/icons/PreviewIcon'
 
 const CardProjects = () => {
 
@@ -31,12 +32,12 @@ const CardProjects = () => {
                     <div className="flex gap-4 text-white">
                         <a href="https://github.com/FavioGenaro/task-app-context-reducer" 
                             className="p-2 bg-gray-800 border border-gray-600 rounded-xl flex gap-2">
-                            <img src={github} alt="" />
+                            <GithubIcon haveModeDark={false}/>
                             <p>Code</p>
                         </a>
                         <a href="https://task-app-simple.netlify.app/"
                             className="p-2 bg-gray-800 border border-gray-600 rounded-xl flex gap-2">
-                            <img src={github} alt="" />
+                            <PreviewIcon/>
                             Preview
                         </a>
                     </div>
