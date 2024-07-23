@@ -28,7 +28,6 @@ const Projects = () => {
             technologies:["React","Tailwind CSS","Axios","GraphQL"]
         }
     ];
-    console.log(image1)
 
     return (
         <section id="Projects" className="m-auto w-autow-full mx-auto py-4 md:py-4 w-full lg:max-w-3xl md:max-w-2xl">

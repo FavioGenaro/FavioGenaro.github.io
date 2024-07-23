@@ -2,6 +2,7 @@ import foto from "../assets/cv-foto.webp"
 import GithubIcon from "../assets/icons/GithubIcon";
 import LinkedinIcon from "../assets/icons/LinkedinIcon";
 import MailIcon from "../assets/icons/MailIcon";
+import PhoneIcon from "../assets/icons/PhoneIcon";
 
 const Profile = () => {
 
@@ -22,7 +23,7 @@ const Profile = () => {
             <p className="mt-6 text-xl text-gray-800 dark:text-white">
                 Estudiante de <strong>Ingeniería de Software</strong> de Lima, Perú 🇵🇪. Especializado en el desarrollo de aplicaciones web.
             </p>
-            <div className="contact py-4 sm:flex sm:justify-between dark:text-white my-auto text-center">
+            <div className="contact py-4 sm:flex sm:gap-4 dark:text-white my-auto text-center">
                 <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
                     href="https://www.linkedin.com/in/favio-saico/">
                     <LinkedinIcon/>
@@ -33,11 +34,19 @@ const Profile = () => {
                     <GithubIcon haveModeDark={true}/>
                     <p>GitHub</p>
                 </a>
-                <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0">
+            </div>
+            <div className="contact py-4 sm:flex sm:gap-4 dark:text-white my-auto text-center">
+                <p>Contáctame:</p>
+                <p className="flex items-center justify-center gap-2 mt-2 sm:mt-0">
                     <MailIcon/>
                     <p>faviogenarosaico@gmail.com</p>
-                </a>
+                </p>
+                <p className="flex items-center justify-center gap-2 mt-2 sm:mt-0">
+                    <PhoneIcon/>
+                    <p>+51 944380075</p>
+                </p>
             </div>
+
         </section>
     )
 }

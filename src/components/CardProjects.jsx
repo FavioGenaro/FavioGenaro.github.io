@@ -1,5 +1,6 @@
 import GithubIcon from '../assets/icons/GithubIcon'
 import PreviewIcon from '../assets/icons/PreviewIcon'
+import TechnologiesItem from './TechnologiesItem'
 
 const CardProjects = ({ image="https://www.pngall.com/wp-content/uploads/7/Gallery-PNG-Image-File.png",
                         title="Proyecto",
@@ -24,12 +25,10 @@ const CardProjects = ({ image="https://www.pngall.com/wp-content/uploads/7/Galle
                         </h3>
                         
                         {/* tecnologias */}
-                        <div className=' mt-2'>
+                        <div className='mt-2 flex gap-2'>
                             {
                                 technologies.map((e)=>(
-                                    <span className='mr-2'>
-                                        {e}
-                                    </span>
+                                    <TechnologiesItem name={e}/>
                                 ))
                             }
                         </div>

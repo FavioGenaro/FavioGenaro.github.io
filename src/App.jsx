@@ -5,6 +5,7 @@ import Experience from './components/Experience'
 import Projects from './components/Projects'
 import AboutMe from './components/AboutMe'
 import Education from './components/Education'
+import ContactMe from './components/ContactMe'
 // import './App.css'
 
 function App() {
@@ -20,11 +21,11 @@ function App() {
         <Header/>
         <Profile/>
       </div>
+      {/* <ContactMe/> */}
       <AboutMe/>
       <Experience/>
       <Education/>
       <Projects/>
-      
     </>
   )
 }
