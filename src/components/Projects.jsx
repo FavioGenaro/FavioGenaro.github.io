@@ -1,6 +1,7 @@
 import CardProjects from "./CardProjects"
 import image1 from '../assets/images/taskListApp.webp'
 import image2 from "../assets/images/listaPaises.webp";
+import image3 from "../assets/images/apiEcommerce.webp";
 
 const Projects = () => {
 
@@ -15,6 +16,7 @@ const Projects = () => {
                         - Cambio en el diseño de tareas
                         - Modo oscuro`,
             repo:"https://github.com/FavioGenaro/task-app-context-reducer",
+            havePreview: true,
             preview:"https://task-app-simple.netlify.app/",
             technologies:["React","Tailwind CSS"]
         },
@@ -24,8 +26,20 @@ const Projects = () => {
             title:"Lista de Paises",
             description:`Desarrollo de una prueba tecnica usando una API de GraphQL.`,
             repo:"https://github.com/FavioGenaro/prueba-tecnica",
+            havePreview: true,
             preview:"https://countrysearch-prueba.netlify.app/",
             technologies:["React","Tailwind CSS","Axios","GraphQL"]
+        },
+        {
+            id:3,
+            image:image3,
+            title:"API Ecommerce",
+            description:`Proyecto del curso de Gestión del Mantenimiento del Software. Desarrollado
+                        y desplegando usando Docker, Jenkins, SonarQube, New relic y Google Cloud`,
+            repo:"https://github.com/FavioGenaro/project-apis-ecommerce",
+            havePreview: false,
+            preview:"#",
+            technologies:["JavaScript","TypeScript","Node","Java","REST"]
         }
     ];
 
@@ -40,6 +54,7 @@ const Projects = () => {
                         image={item.image} 
                         description={item.description} 
                         repo={item.repo} 
+                        havePreview={item.havePreview}
                         preview={item.preview} 
                         technologies={item.technologies}
                     />

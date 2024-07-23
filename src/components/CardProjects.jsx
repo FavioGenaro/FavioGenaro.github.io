@@ -7,14 +7,15 @@ const CardProjects = ({ image="https://www.pngall.com/wp-content/uploads/7/Galle
                         description="Descripcion",
                         repo="https://github.com/FavioGenaro?tab=repositories",
                         preview="https://faviogenaro.github.io/",
+                        havePreview=false,
                         technologies=["React", "Tailwind CSS"]}) => {
 
     // https://www.pngall.com/wp-content/uploads/7/Gallery-PNG-Image-File.png
 
     return (
-            <article className="grid sm:grid-cols-2 gap-8 dark:text-white mb-8">
+            <article className="grid sm:grid-cols-2 gap-8 dark:text-white mb-8 w-full sm:w-[90%] mx-auto md:w-full">
                 {/* imagen */}
-                <div className="h-full rounded-3xl overflow-hidden">
+                <div className="h-full rounded-3xl overflow-hidden flex">
                     <img src={image} alt="" className="w-full h-60" />
                 </div>
                 {/* name */}
@@ -44,11 +45,16 @@ const CardProjects = ({ image="https://www.pngall.com/wp-content/uploads/7/Galle
                             <GithubIcon haveModeDark={false}/>
                             <p>Code</p>
                         </a>
-                        <a href={preview}
-                            className="p-2 bg-gray-800 border border-gray-600 rounded-xl flex gap-2">
-                            <PreviewIcon/>
-                            Preview
-                        </a>
+                        {
+                            havePreview && (
+                                <a href={preview}
+                                    className="p-2 bg-gray-800 border border-gray-600 rounded-xl flex gap-2">
+                                    <PreviewIcon/>
+                                    Preview
+                                </a>
+                            )
+                        }
+                        
                     </div>
                 </div>
             </article>
