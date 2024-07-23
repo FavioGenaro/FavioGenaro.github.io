@@ -11,7 +11,7 @@ const Profile = () => {
                 <div className="image">
                     <img src={foto} alt="foto de perfil" className="rounded-full shadow-lg size-32" />
                 </div>
-                <div className="state px-3 py-1 text-sm text-green-900 bg-green-100 border-2 border-lime-400 rounded-full cursor-pointer">
+                <div className="state px-3 py-1 text-sm text-green-900 bg-green-100 border-2 border-lime-400 rounded-full cursor-pointer mb-4 sm:mb-0">
                     <a href="https://www.linkedin.com/in/favio-saico">Disponible para trabajar</a>
                 </div>
             </div>
@@ -22,18 +22,18 @@ const Profile = () => {
             <p className="mt-6 text-xl text-gray-800 dark:text-white">
                 Estudiante de <strong>Ingeniería de Software</strong> de Lima, Perú 🇵🇪. Especializado en el desarrollo de aplicaciones web.
             </p>
-            <div className="contact py-4 sm:flex sm:justify-between dark:text-white my-auto">
-                <a className="flex items-center gap-2 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
-                href="https://www.linkedin.com/in/favio-saico/">
+            <div className="contact py-4 sm:flex sm:justify-between dark:text-white my-auto text-center">
+                <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
+                    href="https://www.linkedin.com/in/favio-saico/">
                     <LinkedinIcon/>
                     <p>LinkedIn</p>
                 </a>
-                <a className="flex items-center gap-2 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
-                href="https://github.com/FavioGenaro">
+                <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
+                    href="https://github.com/FavioGenaro">
                     <GithubIcon haveModeDark={true}/>
                     <p>GitHub</p>
                 </a>
-                <a className="flex items-center gap-2">
+                <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0">
                     <MailIcon/>
                     <p>faviogenarosaico@gmail.com</p>
                 </a>
