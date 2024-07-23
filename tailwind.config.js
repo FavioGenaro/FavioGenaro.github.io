@@ -7,6 +7,9 @@ export default {
   darkMode: "class",
   theme: {
     extend: {},
+    fontFamily: {
+      onest: ["Onest"],
+    },
   },
   plugins: [],
 }

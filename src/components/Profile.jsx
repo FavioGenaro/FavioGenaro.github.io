@@ -23,19 +23,20 @@ const Profile = () => {
                 Estudiante de <strong>Ingeniería de Software</strong> de Lima, Perú 🇵🇪. Especializado en el desarrollo de aplicaciones web.
             </p>
             <div className="contact py-4 sm:flex sm:justify-between dark:text-white my-auto">
-                <div className="flex items-center gap-2">
-                    {/* <img src={linkedin} alt="linkedin-icon" className='w-8 dark:fill-slate-200'/> */}
+                <a className="flex items-center gap-2 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
+                href="https://www.linkedin.com/in/favio-saico/">
                     <LinkedinIcon/>
                     <p>LinkedIn</p>
-                </div>
-                <div className="flex items-center gap-2">
+                </a>
+                <a className="flex items-center gap-2 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
+                href="https://github.com/FavioGenaro">
                     <GithubIcon haveModeDark={true}/>
                     <p>GitHub</p>
-                </div>
-                <div className="flex items-center gap-2">
+                </a>
+                <a className="flex items-center gap-2">
                     <MailIcon/>
                     <p>faviogenarosaico@gmail.com</p>
-                </div>
+                </a>
             </div>
         </section>
     )

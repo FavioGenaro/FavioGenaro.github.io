@@ -1,14 +1,17 @@
 import GithubIcon from '../assets/icons/GithubIcon'
 import PreviewIcon from '../assets/icons/PreviewIcon'
+import image1 from '../assets/images/taskListApp.webp'
 
 const CardProjects = () => {
 
+    // https://www.pngall.com/wp-content/uploads/7/Gallery-PNG-Image-File.png
+
     return (
         <div>
-            <article className="grid grid-cols-2 gap-4 dark:text-white h-">
+            <article className="grid sm:grid-cols-2 gap-8 dark:text-white">
                 {/* imagen */}
-                <div className="h-full">
-                    <img src="https://www.pngall.com/wp-content/uploads/7/Gallery-PNG-Image-File.png" alt="" className="w-full h-60" />
+                <div className="h-full rounded-3xl overflow-hidden">
+                    <img src={image1} alt="" className="w-full h-60" />
                 </div>
                 {/* Descripción */}
                 <div className='flex flex-col justify-between'>
@@ -29,7 +32,7 @@ const CardProjects = () => {
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quasi tempora iste quas. Itaque ex, repellendus, voluptas accusamus dignissimos eaque sequi nulla dolor velit ipsum vero rerum unde quis enim!
                     </p>
                     {/* Enlaces */}
-                    <div className="flex gap-4 text-white">
+                    <div className="flex gap-4 text-white mt-2">
                         <a href="https://github.com/FavioGenaro/task-app-context-reducer" 
                             className="p-2 bg-gray-800 border border-gray-600 rounded-xl flex gap-2">
                             <GithubIcon haveModeDark={false}/>

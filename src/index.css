@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 body{
     height: 100%;
     position: relative;
+    @apply font-onest
+}
+h1{
+    @apply font-onest
+}
+h3{
+    @apply font-onest
 }
 
 .button{

@@ -43,12 +43,12 @@ const Header = () => {
                     </button>
                 </div>
                 <nav className={`header ${activado ? 'header-open':'header-close'} transition-all duration-500 ease-in sm:opacity-100 sm:flex sm:flex-row sm:static sm:justify-center gap-0 sm:gap-4 font-medium`}>
-                    <a href="#Profile" className="menu-item border-t">Inicio</a>
+                    <a href="#Profile" className="menu-item border-t" onClick={()=> setActivado(false)}>Inicio</a>
                     <a href="#AboutMe" className="menu-item" onClick={()=> setActivado(false)}>Sobre mí</a>
                     <a href="#Experience" className="menu-item" onClick={()=> setActivado(false)}>Experiencia</a>
                     <a href="#Education" className="menu-item" onClick={()=> setActivado(false)}>Educación</a>
                     <a href="#Projects" className="menu-item" onClick={()=> setActivado(false)}>Proyectos</a>
-                    <a href="#Contact" className="menu-item" onClick={()=> setActivado(false)}>Contacto</a>
+                    {/* <a href="#Contact" className="menu-item" onClick={()=> setActivado(false)}>Contacto</a> */}
                 </nav>
                 <div className="btn-theme dark:bg-slate-950 absolute right-0 p-2 rounded-full">
                     <button onClick={handleChangeTheme} className="border-2 dark:border-cyan-950 flex items-center gap-2 justify-center w-15 p-2 rounded-full">
