@@ -12,7 +12,7 @@ const Projects = () => {
             description:`Mis modificaciones:
                         - Diseño web responsive
                         - Persistencia en el almacenamiento local
-                        - Cambio en el diseño de tareas,
+                        - Cambio en el diseño de tareas
                         - Modo oscuro`,
             repo:"https://github.com/FavioGenaro/task-app-context-reducer",
             preview:"https://task-app-simple.netlify.app/",
@@ -22,7 +22,7 @@ const Projects = () => {
             id:2,
             image:image2,
             title:"Lista de Paises",
-            description:`Desarrollo de una prueba tecnica usando una API de GraphQL`,
+            description:`Desarrollo de una prueba tecnica usando una API de GraphQL.`,
             repo:"https://github.com/FavioGenaro/prueba-tecnica",
             preview:"https://countrysearch-prueba.netlify.app/",
             technologies:["React","Tailwind CSS","Axios","GraphQL"]
