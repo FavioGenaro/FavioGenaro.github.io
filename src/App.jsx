@@ -26,6 +26,7 @@ function App() {
       <Experience/>
       <Education/>
       <Projects/>
+      
     </>
   )
 }

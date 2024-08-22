@@ -41,14 +41,18 @@ const CardProjects = ({ image="https://www.pngall.com/wp-content/uploads/7/Galle
                     {/* Enlaces */}
                     <div className="flex gap-4 text-white mt-2">
                         <a href={repo} 
-                            className="p-2 bg-gray-800 border border-gray-600 rounded-xl flex gap-2">
+                            className="p-2 bg-gray-800 border border-gray-600 rounded-xl flex gap-2"
+                            target="_blank"
+                        >
                             <GithubIcon haveModeDark={false}/>
                             <p>Code</p>
                         </a>
                         {
                             havePreview && (
                                 <a href={preview}
-                                    className="p-2 bg-gray-800 border border-gray-600 rounded-xl flex gap-2">
+                                    className="p-2 bg-gray-800 border border-gray-600 rounded-xl flex gap-2"
+                                    target="_blank"
+                                >
                                     <PreviewIcon/>
                                     Preview
                                 </a>

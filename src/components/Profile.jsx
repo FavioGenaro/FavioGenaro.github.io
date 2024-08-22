@@ -1,4 +1,5 @@
 import foto from "../assets/cv-foto.webp"
+import CvIcon from "../assets/icons/CvIcon";
 import GithubIcon from "../assets/icons/GithubIcon";
 import LinkedinIcon from "../assets/icons/LinkedinIcon";
 import MailIcon from "../assets/icons/MailIcon";
@@ -25,18 +26,26 @@ const Profile = () => {
             </p>
             <div className="contact py-4 sm:flex sm:gap-4 dark:text-white my-auto text-center">
                 <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
+                    target="_blank"
                     href="https://www.linkedin.com/in/favio-saico/">
                     <LinkedinIcon/>
                     <p>LinkedIn</p>
                 </a>
                 <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
+                    target="_blank"
                     href="https://github.com/FavioGenaro">
                     <GithubIcon haveModeDark={true}/>
                     <p>GitHub</p>
                 </a>
+                <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1yJSRBB-UAOZo88R0SmG1HJY1VK4IGjuB/view?usp=sharing">
+                    <CvIcon/>
+                    <p>CV</p>
+                </a>
             </div>
             <div className="contact py-4 sm:flex sm:gap-4 dark:text-white my-auto text-center">
-                <p>Contáctame:</p>
+                <p><b>Contáctame:</b></p>
                 <p className="flex items-center justify-center gap-2 mt-2 sm:mt-0">
                     <MailIcon/>
                     <p>faviogenarosaico@gmail.com</p>

@@ -2,6 +2,7 @@ import CardProjects from "./CardProjects"
 import image1 from '../assets/images/taskListApp.webp'
 import image2 from "../assets/images/listaPaises.webp";
 import image3 from "../assets/images/apiEcommerce.webp";
+import image4 from "../assets/images/tasktrack.webp";
 
 const Projects = () => {
 
@@ -10,11 +11,7 @@ const Projects = () => {
             id:1,
             image:image1,
             title:"Task List App",
-            description:`Mis modificaciones:
-                        - Diseño web responsive
-                        - Persistencia en el almacenamiento local
-                        - Cambio en el diseño de tareas
-                        - Modo oscuro`,
+            description:`Proyecto con diseño web responsive, persistencia en el almacenamiento local con localStorage, cambio en el diseño de tareas, modo oscuro`,
             repo:"https://github.com/FavioGenaro/task-app-context-reducer",
             havePreview: true,
             preview:"https://task-app-simple.netlify.app/",
@@ -35,11 +32,21 @@ const Projects = () => {
             image:image3,
             title:"API Ecommerce",
             description:`Proyecto del curso de Gestión del Mantenimiento del Software. Desarrollado
-                        y desplegando usando Docker, Jenkins, SonarQube, New relic y Google Cloud`,
+                        y desplegando usando Docker, Jenkins, SonarQube, New relic y Google Cloud.`,
             repo:"https://github.com/FavioGenaro/project-apis-ecommerce",
             havePreview: false,
             preview:"#",
             technologies:["JavaScript","TypeScript","Node","Java","REST"]
+        },
+        {
+            id:4,
+            image:image4,
+            title:"Task track",
+            description:`Sistema web de organización de tareas que cuenta con visualizaciones en forma de calendario y kanban.`,
+            repo:"https://github.com/FavioGenaro/task-track",
+            havePreview: false,
+            preview:"#",
+            technologies:["TypeScript","Angular","C#",".NET","REST"]
         }
     ];
 
