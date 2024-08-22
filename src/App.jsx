@@ -9,7 +9,6 @@ import ContactMe from './components/ContactMe'
 // import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
