@@ -15,8 +15,8 @@ const Experience = () => {
                         {/* Contenido */}
                         <h3 className="text-xl font-bold text-blue-900 dark:text-blue-400">Practicante Pre-profesional del Área de TI comercial</h3>
                         <h4 className="font-semibold text-xl text-gray-600 dark:text-white">Luz del Sur</h4>
-                        <time className="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">Abril 2024 - Actualidad</time>
-                        <p className="text-base">Mantenimiento de aplicaciones web y de escritorio .NET, modificación de datos usando SQL en base de datos Informix y análisis de requerimientos.</p>
+                        <time className="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">Abril 2024 - Diciembre 2024</time>
+                        <p className="text-base">Mantenimiento de aplicaciones web frontend, backend y de escritorio en .NET con C# y Visual Basic, extracción y análisis de información a través de consultas SQL en base de datos Informix y análisis de requerimientos funcionales.</p>
                     </div>
                     
                 </div>

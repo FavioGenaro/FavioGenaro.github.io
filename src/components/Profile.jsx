@@ -39,7 +39,7 @@ const Profile = () => {
                 </a>
                 <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
                     target="_blank"
-                    href="https://drive.google.com/file/d/1yJSRBB-UAOZo88R0SmG1HJY1VK4IGjuB/view?usp=sharing">
+                    href="https://drive.google.com/file/d/12rkchEvU9Q1QCjus2DIuLJCGKLyAb57y/view?usp=sharing">
                     <CvIcon/>
                     <p>CV</p>
                 </a>
