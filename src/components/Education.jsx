@@ -3,10 +3,10 @@ const Education = () => {
     const listEducation = [
         {
             id:1,
-            academyDiscipline: "Ingeniería de Software",
+            academyDiscipline: "Egresado de Ingeniería de Software",
             studyCenter:"Universidad Nacional Mayor de San Marcos",
             startDate: "Octubre 2020",
-            endDate:"Actualidad",
+            endDate:"Julio 2025",
             description: "Algunas asignaturas: Algoritmia, Estructura de datos, Base de datos, Arquitectura de software, Calidad de software, Gestión de proyectos de software, etc."
         },{
             id:2,

@@ -35,7 +35,7 @@ const Header = () => {
 
     // console.log(open)
     return (
-        <div className="header-nav container fixed mx-auto dark:text-red-900 z-30">
+        <div className="header-nav container fixed mx-auto dark:text-red-900 z-30 mt-2">
             <div className='relative w-full flex sm:items-center sm:justify-center'>
                 <div className="button">
                     <button className="sm:hidden p-2 mr-auto cursor-pointer" onClick={clickMenu}>
