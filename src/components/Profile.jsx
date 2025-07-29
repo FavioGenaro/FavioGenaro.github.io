@@ -22,7 +22,7 @@ const Profile = () => {
                 Favio Saico
             </h1>
             <p className="mt-6 text-xl text-gray-800 dark:text-white">
-                Estudiante de <strong>Ingeniería de Software</strong> de Lima, Perú 🇵🇪. Especializado en el desarrollo de aplicaciones web.
+                Egresado de <strong>Ingeniería de Software</strong> de Lima, Perú 🇵🇪. Especializado en el desarrollo de aplicaciones web.
             </p>
             <div className="contact py-4 sm:flex sm:gap-4 dark:text-white my-auto text-center">
                 <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
