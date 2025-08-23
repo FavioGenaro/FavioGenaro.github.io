@@ -35,26 +35,24 @@ const Header = () => {
 
     // console.log(open)
     return (
-        <div className="header-nav container fixed mx-auto dark:text-red-900 z-30 mt-2">
+        <div className="header-container header-nav fixed w-full dark:text-red-900 z-30 max-w-full">
             <div className='relative w-full flex sm:items-center sm:justify-center'>
                 <div className="button">
                     <button className="sm:hidden p-2 mr-auto cursor-pointer" onClick={clickMenu}>
                         <img src={activado ? close : menu} alt="menu" className='w-12'/>
                     </button>
                 </div>
-                <nav className={`header ${activado ? 'header-open':'header-close'} transition-all duration-500 ease-in sm:opacity-100 sm:flex sm:flex-row sm:static sm:justify-center gap-0 sm:gap-4 font-medium`}>
+                <nav className={`header ${activado ? 'header-open':'header-close'} transition-all duration-500 ease-in sm:opacity-100 sm:flex sm:flex-row sm:static sm:justify-center gap-0 sm:gap-4 font-medium shadow-xl sm:shadow-none`}>
                     <a href="#Profile" className="menu-item border-t" onClick={()=> setActivado(false)}>Inicio</a>
                     <a href="#AboutMe" className="menu-item" onClick={()=> setActivado(false)}>Sobre mí</a>
                     <a href="#Experience" className="menu-item" onClick={()=> setActivado(false)}>Experiencia</a>
                     <a href="#Education" className="menu-item" onClick={()=> setActivado(false)}>Educación</a>
                     <a href="#Projects" className="menu-item" onClick={()=> setActivado(false)}>Proyectos</a>
-                    {/* <a href="#Contact" className="menu-item" onClick={()=> setActivado(false)}>Contacto</a> */}
                 </nav>
-                <div className="btn-theme dark:bg-slate-950 absolute right-0 p-2 rounded-full">
+                {/* absolute rounded-full dark:bg-slate-950*/}
+                <div className="btn-theme right-0 p-2 ml-auto sm:ml-0">
                     <button onClick={handleChangeTheme} className="border-2 dark:border-cyan-950 flex items-center gap-2 justify-center w-15 p-2 rounded-full">
                         <img src={(theme === 'dark') ? moonIcon : lightIcon} alt="" className="w-5 inline"/>
-                        {/* {(theme === 'dark')?<moonIcon/>:<lightIcon/>} */}
-                        {/* <span className='inline'>{(theme === 'dark') ? "Dark mode" : "Light mode"}</span> */}
                     </button>
                 </div>
             </div>

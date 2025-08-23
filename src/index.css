@@ -50,19 +50,25 @@ h3{
 
     /* bg-white/90 dark:bg-gray-900/90 dark:sm:bg-inherit */
 }
-.header {
+.header-nav{
+    @apply bg-white sm:bg-inherit dark:bg-black/90 dark:sm:bg-inherit;
+}
+.header-container {
     animation: nav-shadown 1s linear both;
     animation-timeline: scroll();
     animation-range: 0 100px;
 }
-.header-nav{
-    @apply bg-white sm:bg-inherit dark:bg-black/90 dark:sm:bg-inherit;
+
+/* .header {
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
 }
 .btn-theme{
     animation: nav-shadown 1s linear both;
     animation-timeline: scroll();
     animation-range: 0 100px;
-}
+} */
 
 /* PROFILE */
 .profile-layout{
@@ -78,8 +84,8 @@ h3{
 
 @keyframes nav-shadown {
     to {
-        @apply shadow-lg ring-1 backdrop-blur ring-gray-500/20;
-        border: 1px solid rgb(158, 158, 158);
+        @apply shadow-xl ring-1 backdrop-blur ring-gray-500/20;
+        border-bottom: 1px solid rgb(158, 158, 158);
         /* dark:bg-gray-800/60 */
         /* bg-white/60 */
     }

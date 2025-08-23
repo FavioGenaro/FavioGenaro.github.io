@@ -22,7 +22,7 @@ const Education = () => {
 
 
     return (
-        <section id="Education" className=" m-auto w-autow-full mx-auto py-4 md:py-4 w-full lg:max-w-3xl md:max-w-2xl">
+        <section id="Education" className=" m-auto w-autow-full mx-auto py-4 md:py-4 w-full lg:max-w-3xl md:max-w-2xl px-3 sm:px-0">
             <h1 className="text-center font-bold text-3xl my-8 dark:text-white">Educación</h1>
             {
                 listEducation.map( (item)=> (

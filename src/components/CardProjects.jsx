@@ -15,8 +15,8 @@ const CardProjects = ({ image="https://www.pngall.com/wp-content/uploads/7/Galle
     return (
             <article className="grid sm:grid-cols-2 gap-8 dark:text-white mb-8 w-full sm:w-[90%] mx-auto md:w-full">
                 {/* imagen */}
-                <div className="h-full rounded-3xl overflow-hidden flex">
-                    <img src={image} alt="" className="w-full h-60" />
+                <div className="h-full rounded-2xl overflow-hidden flex border border-gray-500 dark:border-gray-600 max-w-[21rem] max-h-[15rem] mx-auto sm:max-w-none sm:max-h-none sm:mx-none">
+                    <img src={image} alt="" className="w-full h-60 rounded-2xl" />
                 </div>
                 {/* name */}
                 <div className='flex flex-col justify-between'>
@@ -26,7 +26,7 @@ const CardProjects = ({ image="https://www.pngall.com/wp-content/uploads/7/Galle
                         </h3>
                         
                         {/* tecnologias */}
-                        <div className='mt-2 flex gap-2'>
+                        <div className='mt-2 flex gap-2 flow-wrap'>
                             {
                                 technologies.map((e)=>(
                                     <TechnologiesItem name={e}/>

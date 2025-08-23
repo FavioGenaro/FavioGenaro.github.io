@@ -8,7 +8,7 @@ import PhoneIcon from "../assets/icons/PhoneIcon";
 const Profile = () => {
 
     return (
-        <section id="Profile" className="m-auto w-autow-full mx-auto container profile-layout w-full lg:max-w-3xl md:max-w-2xl">
+        <section id="Profile" className="m-auto w-autow-full mx-auto container profile-layout w-full lg:max-w-3xl md:max-w-2xl px-3 sm:px-0">
             <div className="image-state flex items-center justify-center sm:justify-normal flex-col sm:flex-row gap-4">
                 <div className="image">
                     <img src={foto} alt="foto de perfil" className="rounded-full shadow-lg size-32" />
@@ -25,21 +25,21 @@ const Profile = () => {
                 Egresado de <strong>Ingeniería de Software</strong> de Lima, Perú 🇵🇪. Especializado en el desarrollo de aplicaciones web.
             </p>
             <div className="contact py-4 sm:flex sm:gap-4 dark:text-white my-auto text-center">
-                <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
+                <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 border border-gray-300 rounded-full px-4 py-1" 
                     target="_blank"
                     href="https://www.linkedin.com/in/favio-saico/">
                     <LinkedinIcon/>
                     <p>LinkedIn</p>
                 </a>
-                <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
+                <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 border border-gray-300 rounded-full px-4 py-1" 
                     target="_blank"
                     href="https://github.com/FavioGenaro">
                     <GithubIcon haveModeDark={true}/>
                     <p>GitHub</p>
                 </a>
-                <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer border border-gray-300 rounded-full px-4 py-1" 
+                <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 border border-gray-300 rounded-full px-4 py-1" 
                     target="_blank"
-                    href="https://drive.google.com/file/d/1MovlllMf3V8EEhJTmg0VSHhkCY9I461w/view?usp=sharing">
+                    href="https://drive.google.com/file/d/1moQoRJCtsO50mllpH-Zr7CjOt0HW9hQ-/view?usp=sharing">
                     <CvIcon/>
                     <p>CV</p>
                 </a>
@@ -48,11 +48,11 @@ const Profile = () => {
                 <p><b>Contáctame:</b></p>
                 <p className="flex items-center justify-center gap-2 mt-2 sm:mt-0">
                     <MailIcon/>
-                    <p>faviogenarosaico@gmail.com</p>
+                    <p><a href="mailto:faviogenarosaico@gmail.com">faviogenarosaico@gmail.com</a></p>
                 </p>
                 <p className="flex items-center justify-center gap-2 mt-2 sm:mt-0">
                     <PhoneIcon/>
-                    <p>+51 944380075</p>
+                    <p><a href="https://wa.me/51944380075">+51 944380075</a></p>
                 </p>
             </div>
 

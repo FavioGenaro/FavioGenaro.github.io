@@ -3,7 +3,7 @@ const experienceList = [
         jobName: "Practicante Pre-profesional de desarrollo Frontend",
         companyName: "Coolbox",
         startDate: "Marzo 2025",
-        endDate:"Actualidad",
+        endDate:"Agosto 2025",
         description: "Desarrollo nuevas funcionalidades a través de componentes en React con TypeScript para el ecommerce de Coolbox, desarrollo de landings temáticas para campañas y eventos especiales e integración de nuevas interfaces visuales y corrección de bugs."
     },
     {
@@ -18,7 +18,7 @@ const experienceList = [
 const Experience = () => {
 
     return (
-        <section id="Experience" className="m-auto w-autow-full mx-auto container py-4 md:py-4 w-full lg:max-w-3xl md:max-w-2xl">
+        <section id="Experience" className="m-auto w-autow-full mx-auto container py-4 md:py-4 w-full lg:max-w-3xl md:max-w-2xl px-3 sm:px-0">
             <h1 className="text-center font-bold text-3xl my-8 dark:text-white">Experiencia Laboral</h1>
 
             {
