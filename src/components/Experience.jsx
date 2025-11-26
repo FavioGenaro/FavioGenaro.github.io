@@ -1,17 +1,24 @@
 const experienceList = [
     {
+        jobName: "IT Consultant - Assistant I",
+        companyName: "Management Solutions",
+        startDate: "Octubre 2025",
+        endDate:"Actualidad",
+        description: ""
+    },
+    {
         jobName: "Practicante Pre-profesional de desarrollo Frontend",
         companyName: "Coolbox",
         startDate: "Marzo 2025",
         endDate:"Agosto 2025",
-        description: "Desarrollo nuevas funcionalidades a través de componentes en React con TypeScript para el ecommerce de Coolbox, desarrollo de landings temáticas para campañas y eventos especiales e integración de nuevas interfaces visuales y corrección de bugs."
+        description: "Desarrollo nuevas funcionalidades a través de componentes en React con TypeScript para el ecommerce de Coolbox, desarrollo de landings temáticas, corrección de bugs, control de versiones con Git y Bitbucket usando GitFlow y manejo del entorno VTEX IO, incluyendo el consumo de APIs REST y GraphQL, despliegues a producción, administración de workspaces, CMS y Master Data."
     },
     {
         jobName: "Practicante Pre-profesional del Área de TI comercial",
         companyName: "Luz del Sur",
         startDate: "Abril 2024",
         endDate:"Diciembre 2024",
-        description: "Mantenimiento de aplicaciones web frontend, backend y de escritorio en .NET con C# y Visual Basic, extracción y análisis de información a través de consultas SQL en base de datos Informix y análisis de requerimientos funcionales."
+        description: "Mantenimiento de aplicaciones web Frontend, Backend, tareas programadas y de escritorio en .NET con C# y Visual Basic, pases a entornos de prueba y producción, manejo de consultas sobre base de datos SQL Informix y análisis de requerimientos funcionales."
     }
 ];
 

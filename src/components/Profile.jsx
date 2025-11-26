@@ -14,7 +14,7 @@ const Profile = () => {
                     <img src={foto} alt="foto de perfil" className="rounded-full shadow-lg size-32" />
                 </div>
                 <div className="state px-3 py-1 text-sm text-green-900 bg-green-100 border-2 border-lime-400 rounded-full cursor-pointer mb-4 sm:mb-0">
-                    <a href="https://www.linkedin.com/in/favio-saico">Disponible para trabajar</a>
+                    <a href="https://www.linkedin.com/in/favio-saico">Desarrollador de software</a>
                 </div>
             </div>
             
@@ -47,12 +47,16 @@ const Profile = () => {
             <div className="contact py-4 sm:flex sm:gap-4 dark:text-white my-auto text-center">
                 <p><b>Contáctame:</b></p>
                 <p className="flex items-center justify-center gap-2 mt-2 sm:mt-0">
-                    <MailIcon/>
-                    <p><a href="mailto:faviogenarosaico@gmail.com">faviogenarosaico@gmail.com</a></p>
+                    <a href="mailto:faviogenarosaico@gmail.com" className="flex gap-1">
+                        <MailIcon/>
+                        <p>faviogenarosaico@gmail.com</p>
+                    </a>
                 </p>
                 <p className="flex items-center justify-center gap-2 mt-2 sm:mt-0">
-                    <PhoneIcon/>
-                    <p><a href="https://wa.me/51944380075">+51 944380075</a></p>
+                    <a href="https://wa.me/51944380075" className="flex gap-1">
+                        <PhoneIcon/>
+                        <p>+51 944380075</p>
+                    </a>
                 </p>
             </div>
 
