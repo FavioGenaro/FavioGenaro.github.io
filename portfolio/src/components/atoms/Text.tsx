@@ -6,7 +6,7 @@ interface TextProps {
 
 const Text: React.FC<TextProps> = ({ text }) => {
   return (
-    <p className='text-base text-black dark:text-white text'>
+    <p className='text-base text font-sans'>
       {text}
     </p>
   )

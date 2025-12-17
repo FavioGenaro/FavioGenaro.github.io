@@ -6,43 +6,51 @@
   
   --text-primary: #0f172a;
   --text-secondary: #475569;
+
+  --border-color: #e2e8f0;
   color-scheme: light;
 }
 
 [data-theme="dark"] {
-  --bg-default: #020617;
-  --bg-muted: #020617;
+  --background: #000;
 
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
 
-  --border-color: #1e293b;
+  --border-color: #1d293d;
   color-scheme: dark;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  /* --font-sans: var(--font-geist-sans); */
   --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  /* font-family: theme("fontFamily.sans"); */
 }
 
 .text {
   color: var(--text-primary);
-  /* color: white; */
   border-radius: 0.75rem;
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem; */
+}
+
+.background {
+  color: var(--background);
+  border-color: var(--border-color);
+  @apply border-b
 }

@@ -1,10 +1,26 @@
-import ThemeToggle from "@/components/atoms/ThemeToggle";
+import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <header>
-      <nav>
-        <ThemeToggle />
+    <header
+      className="
+        sticky top-0 z-50
+        border-b 
+        backdrop-blur
+        background
+      "
+    >
+      {/* border-slate-200 dark:border-slate-800
+        bg-white/80 dark:bg-slate-950/80 */}
+      <nav
+        className="
+          mx-auto max-w-6xl
+          px-4 sm:px-6 lg:px-8
+          h-16
+          flex items-center justify-center
+        "
+      >
+        <Navbar />
       </nav>
     </header>
   );
