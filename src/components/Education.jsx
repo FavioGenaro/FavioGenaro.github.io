@@ -7,16 +7,14 @@ const Education = () => {
             studyCenter:"Universidad Nacional Mayor de San Marcos",
             startDate: "Octubre 2020",
             endDate:"Julio 2025",
-            description: "Algunas asignaturas: Algoritmia, Estructura de datos, Base de datos, Arquitectura de software, Calidad de software, Gestión de proyectos de software, etc."
+            description: "Asignaturas: Algoritmia, Estructura de datos, Base de datos, Machine Learning, Diseño de software, Arquitectura de software y Calidad de software."
         },{
             id:2,
             academyDiscipline: "Desarrollador de aplicaciones web",
             studyCenter:"SENATI",
             startDate: "Julio 2017",
             endDate:"Diciembre 2018",
-            description: `Asignaturas: Informática básica, Software aplicativo, Arquitectura de
-                        computadoras y Fundamentos de programación. Tecnologías web, Base de
-                        datos, Lenguajes de programación y Fundamentos de programación web`
+            description: `Asignaturas: Informática básica, Software aplicativo, Fundamentos de programación, Base de datos y Fundamentos de programación web.`
         }
     ];
 
@@ -38,9 +36,9 @@ const Education = () => {
                             <time className="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">
                                 {item.startDate} - {item.endDate}
                             </time>
-                            {/* <p className="text-lg">
+                            <p className="text-lg">
                                 {item.description}
-                            </p> */}
+                            </p>
                         </div>
                     </div>
                 ))

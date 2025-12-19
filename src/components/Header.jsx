@@ -17,7 +17,7 @@ const Header = () => {
     const [activado, setActivado] = useState(false);
     const [theme,setTheme] = useState(initialState)
 
-    function clickMenu(e){
+    function clickMenu(){
         setActivado(!activado);
     }
 

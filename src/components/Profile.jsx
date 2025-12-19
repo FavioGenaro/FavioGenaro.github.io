@@ -22,7 +22,7 @@ const Profile = () => {
                 Favio Saico
             </h1>
             <p className="mt-6 text-xl text-gray-800 dark:text-white">
-                Egresado de <strong>Ingeniería de Software</strong> de Lima, Perú 🇵🇪. Especializado en el desarrollo de aplicaciones web.
+                Bachiller en <strong>Ingeniería de Software</strong>. Especializado en el desarrollo de aplicaciones web frontend y backend.
             </p>
             <div className="contact py-4 sm:flex sm:gap-4 dark:text-white my-auto text-center">
                 <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 border border-gray-300 rounded-full px-4 py-1" 
@@ -39,7 +39,7 @@ const Profile = () => {
                 </a>
                 <a className="flex items-center justify-center gap-2 mt-2 sm:mt-0 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 border border-gray-300 rounded-full px-4 py-1" 
                     target="_blank"
-                    href="https://drive.google.com/file/d/1moQoRJCtsO50mllpH-Zr7CjOt0HW9hQ-/view?usp=sharing">
+                    href="https://drive.google.com/file/d/199C8WFF1tEIVKEV_A3ukfSHNiPbgJ85V/view?usp=sharing">
                     <CvIcon/>
                     <p>CV</p>
                 </a>

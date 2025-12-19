@@ -4,7 +4,7 @@ const experienceList = [
         companyName: "Management Solutions",
         startDate: "Octubre 2025",
         endDate:"Actualidad",
-        description: ""
+        description: " Manejo del lenguaje Scala con Apache Spark y Databricks para el desarrollo de reportes automatizados."
     },
     {
         jobName: "Practicante Pre-profesional de desarrollo Frontend",
@@ -29,8 +29,9 @@ const Experience = () => {
             <h1 className="text-center font-bold text-3xl my-8 dark:text-white">Experiencia Laboral</h1>
 
             {
-                experienceList.map(expItem => (
+                experienceList.map((expItem, i) => (
                     <div
+                        key={i}
                         className="relative mx-12 pb-4 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/50 dark:before:border-white/80 before:content-['']"
                     >
                         <div className="relative pb-4 dark:text-white">
