@@ -8,6 +8,9 @@
   --text-secondary: #475569;
 
   --border-color: #e2e8f0;
+
+  --text-h1: 1.25rem;
+  --text-h3: 0.875rem;
   color-scheme: light;
 }
 
@@ -20,6 +23,14 @@
   --border-color: #1d293d;
   color-scheme: dark;
 }
+
+@media (width >= 48rem) {
+  :root {
+    --text-h1: 2.5rem;
+    --text-h3: 1.5rem;
+  }
+}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -46,15 +57,15 @@ body {
 .text {
   color: var(--text-primary);
   border-radius: 0.75rem;
-  /* padding: 0.5rem 1rem; */
 }
 
 .titleH1 {
-  font-size: 3rem;
+  font-size: var(--text-h1);
+  font-weight: 700;
 }
 
 .titleH3 {
-  font-size: 1.5rem;
+  font-size: var(--text-h3);
 }
 
 .icon {

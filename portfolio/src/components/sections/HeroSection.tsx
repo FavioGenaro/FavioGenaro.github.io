@@ -13,21 +13,18 @@ const HeroSection: React.FC<HeroProps> = ({ id }) => {
   return (
     <section className="space-y-6" id={id}>
         <div className='flex flex-col gap-4'>
-            <div className='flex gap-16 w-fit m-auto items-center'>
+            <div className='flex gap-8 md:gap-16 w-fit m-auto items-center'>
                 <div>
                     <Image
                         src={foto} 
                         alt="foto de perfil" 
-                        className="rounded-full shadow-lg size-32"
+                        className="rounded-full shadow-lg size-20 md:size-32 min-w-20"
                     />
                 </div>
-                <div>
+                <div className='max-w-md'>
                     <h1 className='text titleH1'>Favio Saico</h1>
-                    <h3 className='text titleH3'>Bachiller en Ingeniería de Software.</h3>
+                    <h3 className='text titleH3'>Bachiller en Ingeniería de Software</h3>
                     <Text text='Especializado en el desarrollo de aplicaciones web backend y frontend.'/>
-                    <div>
-
-                    </div>
                 </div>
             </div>
         <div className='flex m-auto w-fit gap-8'>
