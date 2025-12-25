@@ -10,7 +10,7 @@
   --border-color: #e2e8f0;
 
   --text-h1: 1.25rem;
-  --text-h3: 0.875rem;
+  --text-h2: 0.875rem;
   color-scheme: light;
 }
 
@@ -27,7 +27,7 @@
 @media (width >= 48rem) {
   :root {
     --text-h1: 2.5rem;
-    --text-h3: 1.5rem;
+    --text-h2: 1.5rem;
   }
 }
 
@@ -38,6 +38,18 @@
   /* --font-sans: var(--font-geist-sans); */
   --font-mono: var(--font-geist-mono);
   --font-sans: var(--font-sans);
+}
+
+@layer components {
+  .typography {
+    color: var(--color-gray-950);
+    a {
+      color: var(--color-blue-500);
+      &:hover {
+        color: var(--color-blue-800);
+      }
+    }
+  }
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -56,7 +68,6 @@ body {
 
 .text {
   color: var(--text-primary);
-  border-radius: 0.75rem;
 }
 
 .titleH1 {
@@ -64,8 +75,8 @@ body {
   font-weight: 700;
 }
 
-.titleH3 {
-  font-size: var(--text-h3);
+.titleH2 {
+  font-size: var(--text-h2);
 }
 
 .icon {

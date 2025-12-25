@@ -4,6 +4,7 @@ import Text from '../atoms/Text'
 import Image from 'next/image'
 import { MdOutlineMailOutline } from 'react-icons/md'
 import { FaWhatsapp } from "react-icons/fa";
+import SectionLayout from '../templates/SectionLayout'
 
 interface HeroProps {
   id: string
@@ -11,7 +12,7 @@ interface HeroProps {
 
 const HeroSection: React.FC<HeroProps> = ({ id }) => {
   return (
-    <section className="space-y-6" id={id}>
+    <SectionLayout id={id} classSection="mt-12" classDiv="">
         <div className='flex flex-col gap-4'>
             <div className='flex gap-8 md:gap-16 w-fit m-auto items-center'>
                 <div>
@@ -23,23 +24,25 @@ const HeroSection: React.FC<HeroProps> = ({ id }) => {
                 </div>
                 <div className='max-w-md'>
                     <h1 className='text titleH1'>Favio Saico</h1>
-                    <h3 className='text titleH3'>Bachiller en Ingeniería de Software</h3>
+                    <h3 className='text titleH2 font-medium'>Bachiller en Ingeniería de Software</h3>
                     <Text text='Especializado en el desarrollo de aplicaciones web backend y frontend.'/>
                 </div>
             </div>
-        <div className='flex m-auto w-fit gap-8'>
-            <div className='flex gap-1 items-center'>
-                <MdOutlineMailOutline size={24} className='icon' />
-                <Text text='faviogenarosaico@gmail.com'/>
+            <div className='flex m-auto w-fit gap-8'>
+                <div className='flex gap-1 items-center'>
+                    <MdOutlineMailOutline size={24} className='icon' />
+                    <Text text='faviogenarosaico@gmail.com'/>
+                </div>
+                <div className='flex gap-1 items-center'>
+                    <a href="https://wa.me/51944380075" className="flex gap-1">
+                        <FaWhatsapp size={24} className='icon'/>
+                        <Text text='+51 944380075'/>
+                    </a>
+                </div>
             </div>
-            <div className='flex gap-1 items-center'>
-                <FaWhatsapp size={24} className='icon'/>
-                <Text text='+51 944380075'/>
-            </div>
-        </div>
         </div>
         
-    </section>
+    </SectionLayout>
   )
 }
 
