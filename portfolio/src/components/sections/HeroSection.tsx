@@ -24,7 +24,7 @@ const HeroSection: React.FC<HeroProps> = ({ id }) => {
                 </div>
                 <div className='max-w-md'>
                     <h1 className='text titleH1'>Favio Saico</h1>
-                    <h3 className='text titleH2 font-medium'>Bachiller en Ingeniería de Software</h3>
+                    <h2 className='text titleH2 font-medium'>Bachiller en Ingeniería de Software</h2>
                     <Text text='Especializado en el desarrollo de aplicaciones web backend y frontend.'/>
                 </div>
             </div>

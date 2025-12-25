@@ -2,6 +2,7 @@
 
 :root {
   --background: #ffffff;
+  --background-secondary: #F7F9FC;
   --foreground: #171717;
   
   --text-primary: #0f172a;
@@ -15,7 +16,8 @@
 }
 
 [data-theme="dark"] {
-  --background: #000;
+  --background: #22202B;
+  --background-secondary: #181621;
 
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
@@ -87,4 +89,12 @@ body {
   color: var(--background);
   border-color: var(--border-color);
   @apply border-b
+}
+
+.background-secondary {
+  background-color: var(--background-secondary);
+}
+
+li::marker {
+  color: transparent;
 }
