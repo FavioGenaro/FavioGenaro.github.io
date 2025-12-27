@@ -87,7 +87,7 @@ body {
 
 .background {
   color: var(--background);
-  border-color: var(--border-color);
+  /* border-color: var(--border-color); */
   @apply border-b
 }
 

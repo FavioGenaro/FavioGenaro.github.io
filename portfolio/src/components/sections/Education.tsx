@@ -12,12 +12,12 @@ const Education: React.FC<SectionProps> = ({ id }) => {
       <div className='flex justify-center'>
           <Subtitle subtitle='Educación'/>
       </div>
-      <div className='flex'>
+      <div className='flex items-center'>
         <div className='flex justify-center flex-1'>
             <Image
                 src={foto} 
                 alt="foto de perfil" 
-                className="size-40 md:size-60 min-w-40"
+                className="size-80 md:size-80 min-w-80"
             />
         </div>
         <div className='flex flex-col gap-4 md:gap-8 max-w-lg flex-1'>

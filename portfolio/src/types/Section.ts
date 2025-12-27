@@ -9,3 +9,13 @@ export interface SectionLayoutProps {
   classSection?: string
   classDiv?: string
 }
+
+export interface CardProps {
+  id: number
+  title: string;
+  technologies: string[];
+  description: string;
+  linkRepo: string;
+  linkDemo?: string;
+  imageSrc: string;
+}
