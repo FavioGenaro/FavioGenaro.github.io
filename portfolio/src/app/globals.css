@@ -61,12 +61,26 @@
   }
 } */
 
+html{
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 1rem; */
+}
+
+.profile-layout{
+    padding-top: 4rem;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
   /* font-family: theme("fontFamily.sans"); */
 }
+
+/* .header{
+    
+    scroll-behavior: smooth;
+} */
 
 .text {
   color: var(--text-primary);

@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image"
 
 export interface SectionProps {
   id: string
@@ -17,5 +18,5 @@ export interface CardProps {
   description: string;
   linkRepo: string;
   linkDemo?: string;
-  imageSrc: string;
+  imageSrc: StaticImageData | string;
 }

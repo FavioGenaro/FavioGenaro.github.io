@@ -36,7 +36,7 @@ const CardProject: React.FC<CardProps> = ({ title, technologies, description, li
             {/* Enlaces */}
             <div className="flex gap-4 text-white mt-2">
                 <a href={linkRepo} 
-                    className="p-2 bg-gray-800 border border-gray-600 rounded-xl flex gap-2"
+                    className="p-2 bg-gray-800 border border-gray-600 rounded-xl flex gap-2 items-center"
                     target="_blank"
                 >
                     <FaGithub />
@@ -45,7 +45,7 @@ const CardProject: React.FC<CardProps> = ({ title, technologies, description, li
                 {
                     linkDemo && (
                         <a href={linkDemo}
-                            className="p-2 bg-gray-800 border border-gray-600 rounded-xl flex gap-2"
+                            className="p-2 bg-gray-800 border border-gray-600 rounded-xl flex gap-2 items-center"
                             target="_blank"
                         >
                             <GrDeploy />
