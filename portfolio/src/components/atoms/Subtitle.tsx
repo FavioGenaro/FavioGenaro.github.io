@@ -6,7 +6,7 @@ interface SubtitleProps {
 
 const Subtitle: React.FC<SubtitleProps> = ({ subtitle }) => {
   return (
-    <h2 className="titleH2 font-bold text-[#2563EB]">{subtitle}</h2>
+    <h2 className="titleH2 font-bold subtitle">{subtitle}</h2>
   )
 }
 

@@ -4,19 +4,20 @@ import Image from 'next/image';
 import { FaGithub } from 'react-icons/fa';
 import { GrDeploy } from 'react-icons/gr';
 import { CardProps } from '@/types/Section';
+import Text from '../atoms/Text';
 
 
 const CardProject: React.FC<CardProps> = ({ title, technologies, description, linkRepo, linkDemo, imageSrc }) => {
   return (
-    <article className="grid sm:grid-cols-2 gap-8 dark:text-white mb-8 w-full sm:w-[90%] mx-auto md:w-full">
+    <article className="grid sm:grid-cols-2 gap-4 md:gap-8 dark:text-white mb-8 w-full sm:w-[90%] mx-auto md:w-full">
         {/* imagen */}
-        <div className="h-full rounded-2xl overflow-hidden flex border border-gray-500 dark:border-gray-600 max-w-[21rem] max-h-[15rem] mx-auto sm:max-w-none sm:max-h-none sm:mx-none">
-            <Image src={imageSrc} alt="" className="w-full h-60 rounded-2xl" />
+        <div className="h-full rounded-2xl overflow-hidden flex border border-gray-500 max-w-[21rem] max-h-[15rem] mx-auto sm:max-w-none sm:max-h-none sm:mx-none">
+            <Image src={imageSrc} alt="" className="w-full h-50 md:h-60 max-w-70 md:max-w-100 min-w-70 md:min-w-100 rounded-2xl" />
         </div>
         {/* name */}
         <div className='flex flex-col justify-between'>
             <div>
-                <h3 className='text-2xl font-bold text-gray-800 dark:text-gray-100'>
+                <h3 className='titleH3 font-bold text'>
                     {title}
                 </h3>
                 
@@ -28,9 +29,7 @@ const CardProject: React.FC<CardProps> = ({ title, technologies, description, li
                         ))
                     }
                 </div>
-                <p className='mt-4'>
-                    {description}
-                </p>
+                <Text text={description} className='mt-4' />
             </div>
             
             {/* Enlaces */}

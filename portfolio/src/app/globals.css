@@ -12,6 +12,9 @@
 
   --text-h1: 1.25rem;
   --text-h2: 0.875rem;
+  --text-h3: 0.75rem;
+
+  --text-subtitle: #2563EB;
   color-scheme: light;
 }
 
@@ -21,6 +24,7 @@
 
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
+  --text-subtitle: #3B82F6;
 
   --border-color: #1d293d;
   color-scheme: dark;
@@ -30,6 +34,7 @@
   :root {
     --text-h1: 2.5rem;
     --text-h2: 1.5rem;
+    --text-h3: 1.25rem;
   }
 }
 
@@ -77,11 +82,6 @@ body {
   /* font-family: theme("fontFamily.sans"); */
 }
 
-/* .header{
-    
-    scroll-behavior: smooth;
-} */
-
 .text {
   color: var(--text-primary);
 }
@@ -93,6 +93,15 @@ body {
 
 .titleH2 {
   font-size: var(--text-h2);
+}
+
+.titleH3 {
+  font-size: var(--text-h3);
+}
+
+.subtitle {
+  color: var(--text-subtitle);
+  font-weight: 600;
 }
 
 .icon {

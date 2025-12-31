@@ -6,7 +6,7 @@ import ProjectGrid from '../organisms/ProjectGrid'
 
 const Projects: React.FC<SectionProps> = ( { id } ) => {
   return (
-    <SectionLayout id={id} classSection="mt-20 background-secondary py-12" classDiv="flex-col">
+    <SectionLayout id={id} classSection="mt-20 background-secondary pt-20" classDiv="flex-col">
       <div className='flex justify-center'>
           <Subtitle subtitle='Proyectos Personales'/>
       </div>

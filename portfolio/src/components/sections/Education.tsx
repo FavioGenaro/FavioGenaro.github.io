@@ -8,7 +8,7 @@ import Text from '../atoms/Text'
 
 const Education: React.FC<SectionProps> = ({ id }) => {
   return (
-    <SectionLayout id={id} classSection="mt-20 background" classDiv="flex-col gap-8">
+    <SectionLayout id={id} classSection="pt-20 background" classDiv="flex-col gap-8">
       <div className='flex justify-center'>
           <Subtitle subtitle='Educación'/>
       </div>
