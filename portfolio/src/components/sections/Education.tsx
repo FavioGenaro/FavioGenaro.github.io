@@ -12,7 +12,7 @@ const Education: React.FC<SectionProps> = ({ id }) => {
       <div className='flex justify-center'>
           <Subtitle subtitle='Educación'/>
       </div>
-      <div className='flex items-center'>
+      <div className='flex flex-col md:flex-row items-center'>
         <div className='flex justify-center flex-1'>
             <Image
                 src={foto} 

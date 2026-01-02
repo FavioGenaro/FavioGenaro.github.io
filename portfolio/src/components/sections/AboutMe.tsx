@@ -9,8 +9,8 @@ import SectionLayout from '../templates/SectionLayout'
 const AboutSection: React.FC<SectionProps> = ({ id }) => {
   return (
     // px-4 sm:px-6 lg:px-8 py-12
-    <SectionLayout id={id} classSection="pt-20" classDiv="">
-      <div className='flex flex-col gap-4 md:gap-8 max-w-lg'>
+    <SectionLayout id={id} classSection="pt-20" classDiv="flex-col md:flex-row">
+      <div className='flex flex-col gap-4 md:gap-8 max-w-lg items-center md:items-start'>
           <Subtitle subtitle='Sobre mí' />
           <div className='flex flex-col gap-4'>
               <Text text='Soy Bachiller en Ingeniería de Software de la Universidad Nacional Mayor de San Marcos, me considero una persona organizada, responsable y apasionada por el desarrollo de aplicaciones.'/>

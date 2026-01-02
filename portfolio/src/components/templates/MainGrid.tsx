@@ -4,14 +4,15 @@ export default function MainGrid({ children }: { children: React.ReactNode }) {
     <div
       className="
         min-h-screen
-        grid grid-rows-[auto_1fr]
+        md:grid md:grid-rows-[auto_1fr]
+        block
         background
       "
     >
       <main
         className="
-          grid grid-rows-[auto_1fr]
-          
+          md:grid md:grid-rows-[auto_1fr]
+          block
         "
       >
         {children}
