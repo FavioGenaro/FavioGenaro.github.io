@@ -7,22 +7,13 @@ import image5 from "./../../../public/projects/tasktrack.webp";
 
 const dataProjects: CardProps[] = [
         {
-            id: 1,
-            imageSrc: image1,
-            title: "Task List App",
-            description: `Proyecto con diseño web responsive, persistencia de datos con almacenamiento en localStorage, cambio en el diseño de tareas y modo oscuro.`,
-            linkRepo: "https://github.com/FavioGenaro/task-app-context-reducer",
-            linkDemo: "https://task-app-simple.netlify.app/",
-            technologies: ["JavaScript", "React.js","Tailwind CSS"]
-        },
-        {
-            id: 2,
-            imageSrc: image2,
-            title: "Lista de Paises",
-            description: `Desarrollo de una prueba tecnica mediante consultas a una API GraphQL.`,
-            linkRepo: "https://github.com/FavioGenaro/prueba-tecnica",
-            linkDemo: "https://countrysearch-prueba.netlify.app/",
-            technologies: ["React.js","Tailwind CSS","Axios","GraphQL"]
+            id: 5,
+            imageSrc: image5,
+            title: "Task track",
+            description: `Sistema web de organización de tareas que cuenta con visualizaciones en forma de calendario y kanban.`,
+            linkRepo: "https://github.com/FavioGenaro/task-track",
+            // linkDemo: null,
+            technologies: ["TypeScript","Angular","C#",".NET","REST"]
         },
         {
             id: 3,
@@ -42,13 +33,22 @@ const dataProjects: CardProps[] = [
             technologies: ["JavaScript","TypeScript","Node","Java","REST"]
         },
         {
-            id: 5,
-            imageSrc: image5,
-            title: "Task track",
-            description: `Sistema web de organización de tareas que cuenta con visualizaciones en forma de calendario y kanban.`,
-            linkRepo: "https://github.com/FavioGenaro/task-track",
-            // linkDemo: null,
-            technologies: ["TypeScript","Angular","C#",".NET","REST"]
+            id: 1,
+            imageSrc: image1,
+            title: "Task List App",
+            description: `Proyecto con diseño web responsive, persistencia de datos con almacenamiento en localStorage, cambio en el diseño de tareas y modo oscuro.`,
+            linkRepo: "https://github.com/FavioGenaro/task-app-context-reducer",
+            linkDemo: "https://task-app-simple.netlify.app/",
+            technologies: ["JavaScript", "React.js","Tailwind CSS"]
+        },
+        {
+            id: 2,
+            imageSrc: image2,
+            title: "Lista de Paises",
+            description: `Desarrollo de una prueba tecnica mediante consultas a una API GraphQL.`,
+            linkRepo: "https://github.com/FavioGenaro/prueba-tecnica",
+            linkDemo: "https://countrysearch-prueba.netlify.app/",
+            technologies: ["React.js","Tailwind CSS","Axios","GraphQL"]
         },
     ];
 

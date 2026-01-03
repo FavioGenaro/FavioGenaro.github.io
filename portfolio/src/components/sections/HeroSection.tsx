@@ -43,20 +43,19 @@ const HeroSection: React.FC<HeroProps> = ({ id }) => {
             </div>
 
             <div className='flex flex-col md:flex-row m-auto w-full md:w-fit gap-2 md:gap-4'>
-                <a className="flex items-center justify-center gap-2 sm:mt-0 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 border border-gray-300 rounded-full px-4 py-1" 
+                <a className="flex items-center justify-center gap-2 sm:mt-0 cursor-pointer background-btn-social-media border border-gray-300 rounded-full px-4 py-1" 
                     target="_blank"
                     href="https://www.linkedin.com/in/favio-saico/">
-                    {/* <LinkedinIcon/> */}
                     <FaLinkedin size={24} className='icon'/>
                     <Text text='LinkedIn'/>
                 </a>
-                <a className="flex items-center justify-center gap-2 sm:mt-0 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 border border-gray-300 rounded-full px-4 py-1" 
+                <a className="flex items-center justify-center gap-2 sm:mt-0 cursor-pointer background-btn-social-media border border-gray-300 rounded-full px-4 py-1" 
                     target="_blank"
                     href="https://github.com/FavioGenaro">
                     <FaGithub size={24} className='icon'/>
                     <Text text='GitHub'/>
                 </a>
-                <a className="flex items-center justify-center gap-2 sm:mt-0 cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800 border border-gray-300 rounded-full px-4 py-1" 
+                <a className="flex items-center justify-center gap-2 sm:mt-0 cursor-pointer background-btn-social-media border border-gray-300 rounded-full px-4 py-1" 
                     target="_blank"
                     href="https://drive.google.com/file/d/199C8WFF1tEIVKEV_A3ukfSHNiPbgJ85V/view?usp=sharing">
                     <GiGraduateCap size={24} className='icon'/>

@@ -20,3 +20,11 @@ export interface CardProps {
   linkDemo?: string;
   imageSrc: StaticImageData | string;
 }
+
+export interface JobProps {
+  jobName: string;
+  companyName: string;
+  startDate: string;
+  endDate: string;
+  description: string;
+}
