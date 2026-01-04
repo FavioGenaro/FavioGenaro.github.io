@@ -3,7 +3,7 @@ import TechnologiesItem from '../atoms/TechnologiesItem';
 import Image from 'next/image';
 import { FaGithub } from 'react-icons/fa';
 import { GrDeploy } from 'react-icons/gr';
-import { CardProps } from '@/types/Section';
+import { CardProps } from '@/types/props';
 import Text from '../atoms/Text';
 
 
@@ -12,7 +12,7 @@ const CardProject: React.FC<CardProps> = ({ title, technologies, description, li
     <article className="grid sm:grid-cols-2 gap-4 md:gap-8 dark:text-white mb-8 w-full sm:w-[90%] mx-auto md:w-full">
         {/* imagen */}
         <div className="h-full rounded-2xl overflow-hidden flex border border-gray-500 max-w-[21rem] max-h-[15rem] mx-auto sm:max-w-none sm:max-h-none sm:mx-none">
-            <Image src={imageSrc} alt="" className="w-full h-50 md:h-60 max-w-70 md:max-w-100 min-w-70 md:min-w-100 rounded-2xl" />
+            <Image src={imageSrc} alt={title} className="w-full h-50 md:h-60 max-w-60 md:max-w-100 min-w-70 md:min-w-100 rounded-2xl" />
         </div>
         {/* name */}
         <div className='flex flex-col justify-between'>
@@ -22,7 +22,7 @@ const CardProject: React.FC<CardProps> = ({ title, technologies, description, li
                 </h3>
                 
                 {/* tecnologias */}
-                <div className='mt-2 flex gap-2 flow-wrap'>
+                <div className='mt-2 flex gap-2 flex-wrap'>
                     {
                         technologies.map((e, i)=>(
                             <TechnologiesItem key={i} name={e}/>
@@ -39,7 +39,7 @@ const CardProject: React.FC<CardProps> = ({ title, technologies, description, li
                     target="_blank"
                 >
                     <FaGithub />
-                    <p>Code</p>
+                    <p className='text-xs md:text-[16px]'>Code</p>
                 </a>
                 {
                     linkDemo && (
@@ -48,11 +48,11 @@ const CardProject: React.FC<CardProps> = ({ title, technologies, description, li
                             target="_blank"
                         >
                             <GrDeploy />
-                            Preview
+                            <p className='text-xs md:text-[16px]'>Preview</p>
+                            
                         </a>
                     )
                 }
-                
             </div>
         </div>
     </article>

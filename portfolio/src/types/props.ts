@@ -28,3 +28,9 @@ export interface JobProps {
   endDate: string;
   description: string;
 }
+
+export interface SocialMediaBtnProps {
+  children?: React.ReactNode;
+  link: string;
+  label: string;
+}

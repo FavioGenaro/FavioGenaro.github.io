@@ -1,4 +1,4 @@
-import { CardProps } from "@/types/Section";
+import { CardProps } from "@/types/props";
 import image1 from "./../../../public/projects/taskListApp.webp";
 import image2 from "./../../../public/projects/listaPaises.webp";
 import image3 from "./../../../public/projects/apiEcommerce-tesis.webp";

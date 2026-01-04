@@ -1,8 +1,8 @@
-import { JobProps, SectionProps } from '@/types/Section'
+import { JobProps, SectionProps } from '@/types/props'
 import React from 'react'
 import SectionLayout from '../templates/SectionLayout'
 import Subtitle from '../atoms/Subtitle'
-import Text from '../atoms/Text';
+import ExperienceItem from '../molecules/ExperienceItem';
 
 const experienceList: JobProps[] = [
     {
@@ -30,31 +30,14 @@ const experienceList: JobProps[] = [
 
 const Experience: React.FC<SectionProps> = ({ id }) => {
   return (
-    <SectionLayout id={id} classSection="mt-20 background-secondary pt-20 pb-12" classDiv="flex-col">
+    <SectionLayout id={id} classSection="mt-10 md:mt-20 background-secondary pt-10 pb-10 md:pt-20 md:pb-12" classDiv="flex-col">
       <div className='flex justify-center'>
           <Subtitle subtitle='Experiencia laboral'/>
       </div>
-      <div className='flex flex-col m-auto w-fit gap-8'>
+      <div className='flex flex-col m-auto w-fit max-w-175 mt-4 md:mt-8'>
         {
                 experienceList.map((expItem, i) => (
-                    <div
-                        key={i}
-                        className="relative mx-12 pb-4 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/50 dark:before:border-white/80 before:content-['']"
-                    >
-                        <div className="relative pb-4 dark:text-white">
-                            <div className="sticky top-0">
-                                {/* punto */}
-                                <span className="text-gray-600 dark:text-white -left-[43px] -top-[25px] absolute rounded-full text-6xl">
-                                    &bull;
-                                </span>
-                                {/* Contenido */}
-                                <h3 className="text-xl font-bold text-blue-900 dark:text-blue-400">{expItem.jobName}</h3>
-                                <h4 className="font-semibold text-xl text-gray-600 dark:text-white">{expItem.companyName}</h4>
-                                <time className="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">{expItem.startDate} - {expItem.endDate}</time>
-                                <Text text={expItem.description}/>
-                            </div>
-                        </div>
-                    </div>
+                    <ExperienceItem expItem={expItem} key={i} />
                 ))
             }
       </div>

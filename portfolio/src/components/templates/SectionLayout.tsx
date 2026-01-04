@@ -1,4 +1,4 @@
-import { SectionLayoutProps } from '@/types/Section'
+import { SectionLayoutProps } from '@/types/props'
 import React from 'react'
 
 const SectionLayout: React.FC<SectionLayoutProps> = ( { id, children, classSection, classDiv } ) => {
