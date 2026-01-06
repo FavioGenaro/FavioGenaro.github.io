@@ -17,6 +17,8 @@
 
   --text-subtitle: #2563EB;
 
+  --experience-line-color: #2F2E41;
+
   --btn-social-media: #f1f5f9;
   --color-linetime: #4a5565;
 
@@ -32,6 +34,7 @@
   --text-subtitle: #3B82F6;
 
   --border-color: #1d293d;
+  --experience-line-color: #cbd5e1;
 
   --btn-social-media: #1d293d;
   --color-linetime: #ffffff;
@@ -150,4 +153,12 @@ li::marker {
   /* padding: 20px;
   margin: 30px; */
   font-weight: bold;
+}
+
+.pointExperience {
+  background-color: var(--experience-line-color);
+}
+
+.lineExperience::before {
+  border-color: var(--experience-line-color);
 }
