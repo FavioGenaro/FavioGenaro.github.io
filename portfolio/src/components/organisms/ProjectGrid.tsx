@@ -7,15 +7,6 @@ import image5 from "./../../../public/projects/tasktrack.webp";
 
 const dataProjects: CardProps[] = [
         {
-            id: 5,
-            imageSrc: image5,
-            title: "Task track",
-            description: `Sistema web de organización de tareas que cuenta con visualizaciones en forma de calendario y kanban.`,
-            linkRepo: "https://github.com/FavioGenaro/task-track",
-            // linkDemo: null,
-            technologies: ["TypeScript","Angular","C#",".NET","REST"]
-        },
-        {
             id: 3,
             imageSrc: image3,
             title:"API REST y API GraphQL",
@@ -24,13 +15,12 @@ const dataProjects: CardProps[] = [
             technologies:["TypeScript","NestJS","GraphQL","REST", "JMeter"]
         },
         {
-            id: 4,
-            imageSrc: image4,
-            title: "API Ecommerce",
-            description: `Proyecto del curso de Gestión del Mantenimiento del Software. Desarrollado
-                        y desplegando usando Docker, Jenkins, SonarQube, New relic y Google Cloud.`,
-            linkRepo: "https://github.com/FavioGenaro/project-apis-ecommerce",
-            technologies: ["JavaScript","TypeScript","Node","Java","REST"]
+            id: 5,
+            imageSrc: image5,
+            title: "Task track",
+            description: `Sistema web de organización de tareas que cuenta con visualizaciones en forma de calendario y kanban.`,
+            linkRepo: "https://github.com/FavioGenaro/task-track",
+            technologies: ["TypeScript","Angular","C#",".NET","REST"]
         },
         {
             id: 1,
@@ -49,6 +39,15 @@ const dataProjects: CardProps[] = [
             linkRepo: "https://github.com/FavioGenaro/prueba-tecnica",
             linkDemo: "https://countrysearch-prueba.netlify.app/",
             technologies: ["React.js","Tailwind CSS","Axios","GraphQL"]
+        },
+        {
+            id: 4,
+            imageSrc: image4,
+            title: "API Ecommerce",
+            description: `Proyecto del curso de Gestión del Mantenimiento del Software. Desarrollado
+                        y desplegando usando Docker, Jenkins, SonarQube, New relic y Google Cloud.`,
+            linkRepo: "https://github.com/FavioGenaro/project-apis-ecommerce",
+            technologies: ["JavaScript","TypeScript","Node","Java","REST"]
         },
     ];
 

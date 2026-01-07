@@ -7,6 +7,7 @@
   
   --text-primary: #0f172a;
   --text-secondary: #475569;
+  --text-date: #4a5565;
 
   --border-color: #e2e8f0;
 
@@ -15,7 +16,8 @@
   --text-h3: 0.75rem;
   --text-h4: 0.65rem;
 
-  --text-subtitle: #2563EB;
+  /* --text-subtitle: #2563EB; */
+  --text-subtitle: #2057ce;
 
   --experience-line-color: #2F2E41;
 
@@ -32,6 +34,7 @@
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-subtitle: #3B82F6;
+  --text-date: #ffffffCC;
 
   --border-color: #1d293d;
   --experience-line-color: #cbd5e1;
@@ -96,6 +99,10 @@ body {
 
 .text {
   color: var(--text-primary);
+}
+
+.dateText {
+  color: var(--text-date);
 }
 
 .titleH1 {

@@ -7,6 +7,9 @@ interface NavbarItemProps {
 }
 
 const NavbarItem: React.FC<NavbarItemProps> = ({ label, href }) => {
+
+  
+
   return (
     <div className='px-2 py-1'>
       <li>
