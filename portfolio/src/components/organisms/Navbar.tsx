@@ -25,14 +25,14 @@ export default function Navbar() {
         className="
           md:hidden
           rounded-md p-2
-          border border-slate-200 dark:border-slate-800
+          border border-slate-200 dark:border-slate-800 menu-color
         "
       >
         {/* Icono hamburguesa */}
         <div className="space-y-1">
-          <span className="block h-0.5 w-5 bg-current" />
-          <span className="block h-0.5 w-5 bg-current" />
-          <span className="block h-0.5 w-5 bg-current" />
+          <span className="block h-0.5 w-5 menu-icon-background" />
+          <span className="block h-0.5 w-5 menu-icon-background" />
+          <span className="block h-0.5 w-5 menu-icon-background" />
         </div>
       </button>
 
@@ -40,20 +40,19 @@ export default function Navbar() {
       {open && (
         <div
           className="
-            absolute right-0 top-12 z-50
-            w-56
-            rounded-xl
-            bg-white dark:bg-slate-950
-            border border-slate-200 dark:border-slate-800
-            shadow-lg
+            absolute right-0 top-14 z-50
+            w-full
+            rounded-sm
+            menu-background
+            border border-slate-200 dark:border-slate-800 menu-color
           "
         >
           <ul className="flex flex-col py-2">
-            <NavbarItem href="#Profile" label="Inicio" />
-            <NavbarItem href="#AboutMe" label="Sobre mí" />
-            <NavbarItem href="#Experience" label="Experiencia" />
-            <NavbarItem href="#Education" label="Educación" />
-            <NavbarItem href="#Projects" label="Proyectos" />
+            <NavbarItem href="#Profile" label="Inicio" classNameText="text-center" classNameContainer="" classNameLi="border-b-1 border-menu-item w-[80%] mx-auto py-2"/>
+            <NavbarItem href="#AboutMe" label="Sobre mí" classNameText="text-center" classNameLi="border-b-1 border-menu-item w-[80%] mx-auto py-2"/>
+            <NavbarItem href="#Experience" label="Experiencia" classNameText="text-center" classNameLi="border-b-1 border-menu-item w-[80%] mx-auto py-2"/>
+            <NavbarItem href="#Education" label="Educación" classNameText="text-center" classNameLi="border-b-1 border-menu-item w-[80%] mx-auto py-2"/>
+            <NavbarItem href="#Projects" label="Proyectos" classNameText="text-center" classNameLi="border-b-1 border-menu-item w-[80%] mx-auto py-2"/>
 
             <div className="px-4 py-2">
               <ThemeToggle />

@@ -3,20 +3,22 @@
 :root {
   --background: #ffffff;
   --background-secondary: #F7F9FC;
+  --menu-background: #ffffff;
+  --menu-icon-background: #1d293d;
   --foreground: #171717;
   
   --text-primary: #0f172a;
   --text-secondary: #475569;
   --text-date: #4a5565;
 
-  --border-color: #e2e8f0;
+  --border-color: #1d293d;
+  --border-color-menu-item: #2e3d57;
 
   --text-h1: 1.25rem;
   --text-h2: 0.875rem;
   --text-h3: 0.75rem;
   --text-h4: 0.65rem;
 
-  /* --text-subtitle: #2563EB; */
   --text-subtitle: #2057ce;
 
   --experience-line-color: #2F2E41;
@@ -30,13 +32,16 @@
 [data-theme="dark"] {
   --background: #22202B;
   --background-secondary: #181621;
+  --menu-background: #22202B;
+  --menu-icon-background: #e2e8f0;
 
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-subtitle: #3B82F6;
   --text-date: #ffffffCC;
 
-  --border-color: #1d293d;
+  --border-color: #e2e8f0;
+  --border-color-menu-item: #e2e8f0;
   --experience-line-color: #cbd5e1;
 
   --btn-social-media: #1d293d;
@@ -133,7 +138,6 @@ body {
 
 .background {
   color: var(--background);
-  /* border-color: var(--border-color); */
   @apply border-b
 }
 
@@ -143,6 +147,22 @@ body {
 
 .background-btn-social-media:hover {
   background-color: var(--btn-social-media);
+}
+
+.border-menu-item {
+  border-color: var(--border-color-menu-item);
+}
+
+.menu-color {
+  border-color: var(--border-color);
+}
+
+.menu-icon-background {
+  background-color: var(--menu-icon-background);
+}
+
+.menu-background {
+  background-color: var(--menu-background);
 }
 
 .line-time {
