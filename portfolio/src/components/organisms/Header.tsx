@@ -5,7 +5,6 @@ export default function Header() {
     <header
       className="
         fixed top-0 z-50
-        border-b
         backdrop-blur
         background
         header
@@ -18,7 +17,7 @@ export default function Header() {
         className="
           mx-auto max-w-6xl
           px-4 sm:px-6 lg:px-8
-          h-16
+          h-10 md:h-16
           flex items-center justify-center
         "
       >

@@ -14,7 +14,7 @@ interface HeroProps {
 
 const HeroSection: React.FC<HeroProps> = ({ id }) => {
   return (
-    <SectionLayout id={id} classSection="pt-20 md:pt-40 pb-8 md:pb-12" classDiv="">
+    <SectionLayout id={id} classSection="pt-20 md:pt-40 pb-4 md:pb-12" classDiv="">
         <div className='flex flex-col gap-4'>
             <div className='flex flex-col md:flex-row items-center gap-4 md:gap-16 w-fit m-auto md:items-center'>
                 <div>

@@ -3,20 +3,24 @@
 :root {
   --background: #ffffff;
   --background-secondary: #F7F9FC;
+  --background-theme: #ececec;
+  --background-theme-icon: #FFFFFF;
   --menu-background: #ffffff;
   --menu-icon-background: #1d293d;
   --foreground: #171717;
+
+
   
   --text-primary: #0f172a;
   --text-secondary: #475569;
   --text-date: #4a5565;
 
-  --border-color: #1d293d;
-  --border-color-menu-item: #2e3d57;
+  --border-color: #b5b9c0;
+  --border-color-menu-item: #b5b9c0;
 
   --text-h1: 1.25rem;
   --text-h2: 0.875rem;
-  --text-h3: 0.75rem;
+  --text-h3: 0.875rem;
   --text-h4: 0.65rem;
 
   --text-subtitle: #2057ce;
@@ -34,6 +38,8 @@
   --background-secondary: #181621;
   --menu-background: #22202B;
   --menu-icon-background: #e2e8f0;
+  --background-theme: #000;
+  --background-theme-icon: #22202B;
 
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
@@ -138,11 +144,19 @@ body {
 
 .background {
   color: var(--background);
-  @apply border-b
+  /* @apply border-b */
 }
 
 .background-secondary {
   background-color: var(--background-secondary);
+}
+
+.background-theme-icon {
+  background-color: var(--background-theme-icon);
+}
+
+.background-theme {
+  background-color: var(--background-theme);
 }
 
 .background-btn-social-media:hover {
