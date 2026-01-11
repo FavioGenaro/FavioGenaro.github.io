@@ -2,7 +2,7 @@
 import ThemeToggle from "@/components/atoms/ThemeToggle";
 import NavbarItem from "../molecules/NavbarItem";
 import { useState } from "react";
-
+ 
 export default function Navbar() {
 
   const [open, setOpen] = useState<boolean>(false);

@@ -5,7 +5,7 @@ import image2 from "./../../../public/projects/listaPaises.webp";
 import image3 from "./../../../public/projects/apiEcommerce-tesis.webp";
 import image4 from "./../../../public/projects/apiEcommerce.webp";
 import image5 from "./../../../public/projects/tasktrack.webp";
-
+ 
 const dataProjects: CardProps[] = [
         {
             id: 3,

@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Subtitle from '../atoms/Subtitle'
 import { SectionProps } from '@/types/props'
 import SectionLayout from '../templates/SectionLayout'
-
+ 
 const AboutSection: React.FC<SectionProps> = ({ id }) => {
   return (
     // px-4 sm:px-6 lg:px-8 py-12

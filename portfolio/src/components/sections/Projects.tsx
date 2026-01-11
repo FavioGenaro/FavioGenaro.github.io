@@ -17,5 +17,5 @@ const Projects: React.FC<SectionProps> = ( { id } ) => {
     </SectionLayout>
   )
 }
-
+ 
 export default Projects

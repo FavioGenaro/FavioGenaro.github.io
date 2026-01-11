@@ -45,5 +45,5 @@ const Experience: React.FC<SectionProps> = ({ id }) => {
     </SectionLayout>
   )
 }
-
+ 
 export default Experience

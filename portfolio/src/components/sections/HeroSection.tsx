@@ -12,7 +12,7 @@ import SocialMediaBtn from '../molecules/SocialMediaBtn'
 interface HeroProps {
   id: string
 }
-
+ 
 const HeroSection: React.FC<HeroProps> = ({ id }) => {
   return (
     <SectionLayout id={id} classSection="pt-20 md:pt-40 pb-4 md:pb-12" classDiv="">

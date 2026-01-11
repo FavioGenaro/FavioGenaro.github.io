@@ -2,7 +2,7 @@
 import React from 'react'
 import Text from '../atoms/Text'
 import { JobProps } from '@/types/props';
-
+ 
 interface ExperienceProps {
   expItem: JobProps;
 }

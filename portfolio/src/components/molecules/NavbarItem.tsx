@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import Text from '../atoms/Text';
-
+ 
 interface NavbarItemProps {
   label: string;
   href: string;

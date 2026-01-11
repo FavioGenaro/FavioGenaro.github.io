@@ -7,7 +7,7 @@ import { GrDeploy } from 'react-icons/gr';
 import { CardProps } from '@/types/props';
 import Text from '../atoms/Text';
 
-
+ 
 const CardProject: React.FC<CardProps> = ({ title, technologies, description, linkRepo, linkDemo, imageSrc }) => {
   return (
     <article className="grid sm:grid-cols-2 gap-4 md:gap-8 dark:text-white mb-8 w-full sm:w-[90%] mx-auto md:w-full">

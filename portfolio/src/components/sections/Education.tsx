@@ -6,7 +6,7 @@ import Subtitle from '../atoms/Subtitle'
 import foto from "../../../public/education.svg"
 import Image from 'next/image'
 import Text from '../atoms/Text'
-
+ 
 const Education: React.FC<SectionProps> = ({ id }) => {
   return (
     <SectionLayout id={id} classSection="pt-10 md:pt-20 background" classDiv="flex-col gap-2 md:gap-8">

@@ -12,4 +12,4 @@ const SectionLayout: React.FC<SectionLayoutProps> = ( { id, children, classSecti
   )
 }
 
-export default SectionLayout
+export default SectionLayout 

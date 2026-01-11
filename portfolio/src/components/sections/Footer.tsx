@@ -22,5 +22,5 @@ const Footer: React.FC<SectionProps> = ({ id }) => {
         </SectionLayout>
     )
 }
-
+ 
 export default Footer
