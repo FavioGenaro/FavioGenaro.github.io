@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
+"use client";
+// import type { Metadata } from "next";
 import { spaceGrotesk } from "./font"
 import "./globals.css";
 import MainGrid from "@/components/templates/MainGrid";
 import Header from "@/components/organisms/Header";
 
-export const metadata : Metadata = {
-  title: "Favio Saico | Frontend Developer",
-  description: "Portafolio profesional con React y Next.js",
-}
+// export const metadata : Metadata = {
+//   title: "Favio Saico | Frontend Developer",
+//   description: "Portafolio profesional con React y Next.js",
+// }
 
 export default function RootLayout({
   children,

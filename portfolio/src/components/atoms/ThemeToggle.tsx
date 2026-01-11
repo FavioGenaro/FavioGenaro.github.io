@@ -1,5 +1,4 @@
 "use client";
-
 import { useTheme } from "@/hooks/useTheme";
 import { FaMoon } from "react-icons/fa";
 import { MdOutlineLightMode } from "react-icons/md";

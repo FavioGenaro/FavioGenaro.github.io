@@ -1,4 +1,4 @@
-
+"use client";
 export default function MainGrid({ children }: { children: React.ReactNode }) {
   return (
     <div

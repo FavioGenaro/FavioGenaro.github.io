@@ -1,3 +1,4 @@
+"use client";
 import { CardProps } from "@/types/props";
 import image1 from "./../../../public/projects/taskListApp.webp";
 import image2 from "./../../../public/projects/listaPaises.webp";

@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import foto from "../../../public/aboutme.svg"
 import Text from '../atoms/Text'

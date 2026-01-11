@@ -1,3 +1,4 @@
+"use client";
 import { JobProps, SectionProps } from '@/types/props'
 import React from 'react'
 import SectionLayout from '../templates/SectionLayout'

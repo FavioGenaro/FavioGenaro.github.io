@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import SectionLayout from '../templates/SectionLayout'
 import { SectionProps } from '@/types/props'
