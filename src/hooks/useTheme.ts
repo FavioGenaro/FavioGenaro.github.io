@@ -19,20 +19,6 @@ export function useTheme() {
     }
   }, []);
 
-  // useEffect(() => {
-  //   const media = window.matchMedia("(prefers-color-scheme: dark)");
-  //   const handler = () => {
-  //     if (!localStorage.getItem("theme")) {
-  //       const newTheme = media.matches ? "dark" : "light";
-  //       setTheme(newTheme);
-  //       document.documentElement.setAttribute("data-theme", newTheme);
-  //     }
-  //   };
-  //   media.addEventListener("change", handler);
-  //   return () => media.removeEventListener("change", handler);
-  // }, []);
-
-
   const toggleTheme = () => {
     const nextTheme: Theme = theme === "dark" ? "light" : "dark";
     setTheme(nextTheme);
